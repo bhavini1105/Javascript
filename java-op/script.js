@@ -439,3 +439,22 @@
 //     x = y ;
 //     y = sum;
 // }
+
+
+// Functions Types
+// 1. Function Declaration
+
+// function functionName(para1 , para2) {
+//     return para1 + para2;
+// }
+
+// console.log(functionName(5,6));
+
+//  2. Function Expression / Annoyuos Function
+
+// let functionName = function (para1 , para2) {
+//     return para1 + para2;
+// }
+
+// console.log(functionName(5,6));
+
