@@ -1,6 +1,6 @@
 // 1.  Odd Numbers
 
-// let number = 15;
+// let number = 25;
 
 // while(number > 1){
 
@@ -52,10 +52,12 @@
 
 
 // let count = 0;
+// console.log(a);
+// console.log(b);
 
 // while (count < n) {
-//      sum = a + b;
-//      console.log(sum); 
+//   sum = a + b;
+//   console.log(sum); 
      
 //      a = b;
 //      b = sum;
@@ -65,14 +67,50 @@
 
 // 5.  Count Digits in Number
 
-let num=prompt("Engter a number: ");
-let number=parseInt(num);
-let originalNumber=number;
-let count =0;
-while(number!== 0){
-  number=(number-number%10)/10;
-  count++;
-} 
-console.log(count);
-alert("Number of digit:"+count)
+// let num=prompt("Engter a number: ");
+// let number=parseInt(num);
+// let originalNumber=number;
+// let count =0;
+// while(number!== 0){
+//   number=(number-number%10)/10;
+//   count++;
+// } 
+// console.log(count);
+// alert("Number of digit:"+count)
 // console.log("Number of digit:"+count)
+
+// function division(a, b) {
+//   if (a !== 0 && b !== 0) {
+//       console.log("division is :" + (a / b));
+
+//       function add() {
+//           return a + b;
+//       }
+//   }
+//   console.log("Addition is : " + add(5, 5));
+// }
+
+// division(12, 2);
+
+// let a = [10 ,50,60,25,7,36];
+
+// a.sort((a,b) => b-a);
+// console.log(a);
+
+
+let a=parseInt(prompt("Enter a number :")) 
+
+for(let i=0;i<=a;i++){
+
+  let sum=0;
+
+  for(let j=1;j<=i;j++){
+
+   if (i % j == 0) {
+    sum++;
+   }
+   if(sum == 2){
+    console.log(i);
+   }
+  }
+}

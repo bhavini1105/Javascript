@@ -1,0 +1,4 @@
+git branch day-1(branch name)
+git checkout day-1(branch name)
+
+git push origin day-1(branch name)

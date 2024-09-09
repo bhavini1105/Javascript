@@ -20,7 +20,7 @@ if(units <= 50){
 }else if(units <= 250){
     bill = 75 + ((units-150) * 1.50); 
 }else{
-    bill = 220 + (units-250) * 1.50
+    bill = 220 + ((units-250) * 1.50);
 }
 
 let bills = bill * 0.20;
