@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Document</title>
+</head>
+<body>
+
+    <div id="form">
+        <form>
+            <input type="number" id="userage" placeholder="Enter Your Age" required>
+            <button type="button" onclick="myage()">Submit</button>
+            <p id="msg"></p>
+        </form>
+    </div>
+
+
+    <script>
+      function myage(){
+        let age = document.getElementById("userage").value;
+        let msg = document.getElementById("msg");
+        
+        if(age === "") {
+            msg.innerHTML = "Please Enter Age....";
+            alert("Please Enter Age....")
+        }
+        else if (age == 0 || age < 0) {
+            msg.innerHTML = "Invalid Age.....";  
+        } 
+        else if (age > 0 && age < 2) {
+            msg.innerHTML = "New Born Babies";
+        } 
+        else if (age >= 3 && age <= 16) {
+            msg.innerHTML = "Children";
+        }else if (age >= 17 && age <= 30) {
+            msg.innerHTML = "Young Adult";
+        }
+         else if (age > 31 && age <= 45) {
+            msg.innerHTML = "Middel-Aged Adults";
+        } else {
+            msg.innerHTML = "Old Adults";
+        }
+        console.log(msg.innerHTML);
+        
+      }
+    </script>
+
+</body>
+</html>
