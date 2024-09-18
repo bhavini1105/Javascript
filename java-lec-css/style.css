@@ -1,0 +1,21 @@
+body{
+    height: 100vh;
+    width: 100%;
+}
+#main{
+    height: 250px;
+    width: 250px;
+    border: 1px solid #000;
+}
+button{
+    margin: 10px;
+}
+.main1{
+    background-color: lightcoral;
+    color: blue;
+}
+.color{
+    color: beige;
+    background-color: brown;
+}
+

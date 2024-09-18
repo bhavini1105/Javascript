@@ -58,21 +58,17 @@
 // }
 
 // Input: Basic salary and working hours
-let basicSalary = 3000; // Basic salary
-let workingHours = 49;   // Number of hours worked
+let basicSalary = 3000; 
+let workingHours = 49;   
 let totalSalary = 0;
 
-// Calculate total salary using logical operators
-// If hours <= 40, no overtime, basic salary only
 if (workingHours <= 40) {
     console.log(basicSalary);
 }
-// Overtime pay for hours > 40
 else if (workingHours > 40) {
     totalSalary = basicSalary + (workingHours - 40) * (basicSalary / 40 * 1.5) ;
     console.log(totalSalary);
 }
-// For invalid input values
 else{
     console.log('Wrong Slary Enterde');
 }

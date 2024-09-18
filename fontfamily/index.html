@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Document</title>
+</head>
+
+<body>
+
+    <h1>Hello World</h1>
+    <p>This text will use the custom font.</p>
+
+    <script>
+//Here we are creating a new style element
+        let style = document.createElement('style');
+        style.type = 'text/css';
+// Font face reule
+        let fontFace = `
+        @font-face {
+            font-family: 'MyCustomFont';
+            src: url('./Sofadi_One/SofadiOne-Regular.ttf') format('truetype'),
+            font-weight: normal;
+            font-style: normal;
+        }`;
+
+        // Add the rule to style element
+        style.appendChild(document.createTextNode(fontFace));
+
+        // Append the style element to the head
+        document.head.appendChild(style);
+
+        // Apply the font to elements
+        document.body.style.fontFamily = 'MyCustomFont, sans-serif';
+    </script>
+</body>
+
+</html>
+
+<!-- 
+    <script>
+//Here we are creating a new style element
+        let style = document.createElement('style');
+        style.type = 'text/css';
+// Font face reule
+        let fontFace = `
+        @font-face {
+            font-family: 'MyCustomFont';
+            src: url('./Sofadi_One/SofadiOne-Regular.ttf') format('truetype'),
+            font-weight: normal;
+            font-style: normal;
+        }`;
+
+        // Add the rule to style element
+        style.appendChild(document.createTextNode(fontFace));
+
+        // Append the style element to the head
+        document.head.appendChild(style);
+
+        // Apply the font to elements
+        document.body.style.fontFamily = 'MyCustomFont, sans-serif';
+    </script>
+ -->

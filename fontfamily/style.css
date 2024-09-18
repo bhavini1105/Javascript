@@ -1,0 +1,11 @@
+/* @font-face {
+    font-family: abc;
+    src: url(./Sofadi_One/SofadiOne-Regular.ttf);
+}
+h1{
+    font-family: abc;
+} */
+
+h1{
+    font-family: "Sofadi One", system-ui;
+}
