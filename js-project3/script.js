@@ -21,7 +21,7 @@ function generattable() {
             const tr = document.createElement('tr');
             for (let j = 1; j <= col; j++) {  // Start col index at 1
                 const td = document.createElement('td');
-                td.textContent = i + "x" + j;  // Display row*col format
+                td.textContent = i + "x" + j;  // Display rowxcol format
                 tr.appendChild(td);
             }
             table.appendChild(tr);
