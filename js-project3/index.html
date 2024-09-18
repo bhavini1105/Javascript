@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Table Creation</title>
+</head>
+
+<body>
+
+    <div id="form">
+        <form>
+            <label>Enter Number of Rows:</label>
+            <input type="number" placeholder="Size of rows" id="row">
+            <label>Enter Number of Columns:</label>
+            <input type="number" placeholder="Size of Columns" id="col">
+    
+            <input type="reset" value="Reset" id="reset">
+            <button type="button" onclick="generattable()">Generate Table</button>
+            
+        </form>
+    </div>
+
+    <div id="tablecontainer"></div>
+
+    <script src="./script.js"></script>
+</body>
+</html>
