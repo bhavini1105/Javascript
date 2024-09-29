@@ -4,14 +4,14 @@ function addtask() {
     if (task === "") {
         alert("Enter Task");
     } else {
-        let p = document.createElement('p');
+        let p = document.createElement('p');  // 'p' for adding task  
         p.setAttribute('id', 'container');
 
         p.innerHTML = task;  //  'task' holds the value of the input field
 
         document.getElementById("task").value = "";  // Clear the input field
 
-        let buttondelete = document.createElement('button');
+        let buttondelete = document.createElement('button'); // created delete button
         buttondelete.setAttribute('id', 'delete');
         buttondelete.innerHTML = "Delete";
 
