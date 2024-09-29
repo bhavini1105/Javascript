@@ -1,0 +1,64 @@
+@font-face {
+    font-family: abc;
+    src: url(../js-project3/SofadiOne-Regular.ttf);
+}
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    display: flex;
+    font-family: abc;
+    font-size: 18px;
+    background-image: url(./bg.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+#main{
+    width: 300px;
+    padding: 20px;
+    background-color:rgb(34, 133, 218);
+    margin: 100px auto;
+}
+input{
+    display: block;
+    margin: 10px;
+    padding: 10px;
+    width: 90%;
+    font-family: abc;
+    font-size: 18px;
+}
+button{
+    background-color: #220f9a;
+    display: block;
+    font-family: abc;
+    font-size: 18px;
+    margin: 10px;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 4px 4px 4px #090332;
+    color: #fff;
+    width: 98%;
+}
+button:hover {
+    background-color:#150867;
+}
+#container {
+    margin: 10px 0;
+    padding: 5px;
+    background-color: #f0f0f0;
+    border-radius: 4px;
+}
+
+#delete {
+    margin-left: 10px;
+    background-color: #220f9a;
+    box-shadow: 4px 4px 4px #090332;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    padding: 2px 5px;
+}
+
+#delete:hover {
+    background-color:#150867;
+}
