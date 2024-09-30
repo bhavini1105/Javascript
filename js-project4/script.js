@@ -7,13 +7,14 @@ function addtask() {
         let p = document.createElement('p');  // 'p' for adding task  
         p.setAttribute('id', 'container');
 
+
         p.innerHTML = task;  //  'task' holds the value of the input field
 
         document.getElementById("task").value = "";  // Clear the input field
 
         let buttondelete = document.createElement('button'); // created delete button
         buttondelete.setAttribute('id', 'delete');
-        buttondelete.innerHTML = "Delete";
+        buttondelete.innerHTML = "Completed";
 
         p.appendChild(buttondelete);  // Append delete button to the task
 

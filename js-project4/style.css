@@ -6,12 +6,20 @@ body{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    display: flex;
+    height: 100vh;
     font-family: abc;
     font-size: 18px;
     background-image: url(./bg.jpg);
     background-size: cover;
+    background-position: center;
     background-repeat: no-repeat;
+}
+#demo{
+    display: flex;
+}
+h1{
+    text-align: center;
+    color: white;
 }
 #main{
     width: 300px;
@@ -22,6 +30,7 @@ body{
 input{
     display: block;
     margin: 10px;
+    box-shadow: 4px 4px 4px #0f0f0f;
     padding: 10px;
     width: 90%;
     font-family: abc;
@@ -48,9 +57,14 @@ button:hover {
     background-color: #f0f0f0;
     border-radius: 4px;
 }
+#container{
+    margin-left: 15px;
+    box-shadow: 4px 4px 4px #100f10;
+}
 
 #delete {
     margin-left: 10px;
+    width: 93%;
     background-color: #220f9a;
     box-shadow: 4px 4px 4px #090332;
     color: #fff;
