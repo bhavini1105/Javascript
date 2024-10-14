@@ -1,0 +1,67 @@
+@font-face {
+    font-family: abc;
+    src: url(../js-project3/SofadiOne-Regular.ttf);
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'abc';
+    font-size: 18px;
+    background-color: antiquewhite;
+}
+
+.container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 1000px;
+    height: 600px;
+    border-radius: 8px;
+    background: wheat;
+    box-shadow: 0 30px 50px rgb(102, 101, 101);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.slider {
+    display: flex;
+    width: 80%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    gap: 20px; 
+}
+
+.item {
+    width: 200px;
+    height: 300px;
+    border: 2px solid rgb(75, 73, 73);
+    box-shadow: 0 30px 50px #656565;
+    background-position: center;
+    background-size: cover;
+    transition: 0.5s;
+    flex-shrink: 0; 
+}
+
+.button {
+    width: 100%;
+    text-align: center;
+    position: absolute;
+    bottom: 20px;
+}
+
+.button button {
+    width: 40px;
+    height: 30px;
+    border-radius: 8px;
+    border: none;
+    cursor: pointer;
+    transition: 0.3s;
+}
