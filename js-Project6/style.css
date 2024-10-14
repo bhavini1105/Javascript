@@ -14,6 +14,10 @@ body {
     background-color: antiquewhite;
 }
 
+h1{
+    text-align: center;
+}
+
 .container {
     position: absolute;
     top: 50%;
@@ -23,7 +27,7 @@ body {
     height: 600px;
     border-radius: 8px;
     background: wheat;
-    box-shadow: 0 30px 50px rgb(102, 101, 101);
+    box-shadow: 0 20px 40px rgb(102, 101, 101);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -43,7 +47,7 @@ body {
     width: 200px;
     height: 300px;
     border: 2px solid rgb(75, 73, 73);
-    box-shadow: 0 30px 50px #656565;
+    box-shadow: 0 20px 40px #656565;
     background-position: center;
     background-size: cover;
     transition: 0.5s;
