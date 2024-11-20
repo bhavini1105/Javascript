@@ -7,6 +7,6 @@ This project demonstrates how to create a simple card UI component using HTML an
 Features
 Responsive card design.
 Customizable background image using the background-image CSS property.
-Modern design with shadows, rounded corners, and centered alignment.
+Modern design with shadows,  and centered alignment.
 
 ![Quotes Application](./quote.png);
