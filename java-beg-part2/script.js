@@ -1,4 +1,4 @@
-
+// 'use strict' // gives the error msg , introdueces the reserved variables/word
 
 // function logger(){
 //     console.log('Hello');
