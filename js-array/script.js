@@ -118,8 +118,6 @@ console.log(array1);
 // console.log(total);
 
 
-
-
 // console.log();
 
 // const array1 = [1,2,3,4,5];

@@ -40,6 +40,63 @@
 //   console.log('Wrong Choice !choose between name,job,friends');
 // }
 
+// how to use . & [] for add new properties to object
+/*
+person.location = 'abc';
+person['area'] = 'xyz'; 
+
+let str = `${names.fristname} has ${names.friend.length} and his best Friend is ${names.friend[0]}`;
+
+object Methods
+
+const names = {
+  firstName : 'patel',
+  lastName : 'pihu',
+  birthYear : 1991,
+  job : 'student',
+  friends : ['mahi','ishani','pakhi'],
+  licence : true
+//    calcAge : function(birtYear){
+//               return 2037 - birthYear;
+//    }
+    calcAge : function(){
+              console.log(this);
+              return 2037 - this.birthYear;
+    }  
+              calcAge : function(birtYear){
+              this.age = 2037 - birthYear;
+              return this.age;
+   }  
+}
+
+console.log(names.calAge(1991)); // age in object and the age we gave it would be the same
+console.log(name.calAge());
+console.log(name.age);
+console.log(names.[calAge('calAge)](1991))
+
+const names1 = {
+  firstName : 'patel',
+  lastName : 'pihu',
+  birthYear : 1991,
+  job : 'student',
+  friends : ['mahi','ishani','pakhi'],
+  licence : true,
+  calcAge : function(birtYear){
+               return 2037 - birthYear;
+  }
+  summary : function(){
+        return  `${this.firstName} is ${this.calAge()} old ${this.job} he has ${this.licence? 'a' : 'no'} licence`;
+    }
+}
+
+// function can also have key value pair - as it produces the value
+// any function that is attactched to and object that is method
+// method is also a property that hold a function value
+
+array are also an  object(special) the method of array we use to manipulate the array
+
+*/
+
 // let person = {
 //     name: "John",         
 //     age: 30,               
