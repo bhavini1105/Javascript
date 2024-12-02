@@ -99,12 +99,30 @@ If you want myfun() to allow the default behavior, ensure it explicitly returns 
 // Get the DOM elements
 
 let img = [
-  { id: 'card 1', src: 'https://images.unsplash.com/photo-1465146344425-f00d5f5c8f07?q=80&w=1776&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D', text: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit.' },
-  { id: 'card 2', src: 'https://plus.unsplash.com/premium_photo-1673697239981-389164b7b87f?q=80&w=2044&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D', text: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit.' },
-  { id: 'card 3', src: 'https://plus.unsplash.com/premium_photo-1719943510748-4b4354fbcf56?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D', text: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit.' },
-  { id: 'card 4', src: 'https://images.unsplash.com/photo-1465146344425-f00d5f5c8f07?q=80&w=1776&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D', text: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit.' },
-  { id: 'card 5', src: 'https://plus.unsplash.com/premium_photo-1673697239981-389164b7b87f?q=80&w=2044&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D', text: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit.' },
-  { id: 'card 6', src: 'https://plus.unsplash.com/premium_photo-1719943510748-4b4354fbcf56?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D', text: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit.' }
+  {
+    id: 'card 1',
+    src: 'https://images.unsplash.com/photo-1465146344425-f00d5f5c8f07?q=80&w=1776&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D', text: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit.'
+  },
+  {
+    id: 'card 2',
+    src: 'https://plus.unsplash.com/premium_photo-1673697239981-389164b7b87f?q=80&w=2044&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D', text: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit.'
+  },
+  {
+    id: 'card 3',
+    src: 'https://plus.unsplash.com/premium_photo-1719943510748-4b4354fbcf56?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D', text: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit.'
+  },
+  {
+    id: 'card 4',
+    src: 'https://images.unsplash.com/photo-1465146344425-f00d5f5c8f07?q=80&w=1776&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D', text: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit.'
+  },
+  {
+    id: 'card 5',
+    src: 'https://plus.unsplash.com/premium_photo-1673697239981-389164b7b87f?q=80&w=2044&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D', text: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit.'
+  },
+  {
+    id: 'card 6',
+    src: 'https://plus.unsplash.com/premium_photo-1719943510748-4b4354fbcf56?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D', text: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit.'
+  }
 ];
 
 const slideContainer = document.getElementById('main-container');
@@ -130,12 +148,9 @@ img.forEach((item) => {
 });
 
 const cards = document.querySelectorAll('.slider');
-// for(let i=0 ;i <=2 ; i++){
-//   if(i == 2){
-//     cards[i].classList.add('visible');
-//     break;
-//   }
-// }
+for(let i=index ;i <= index + 2 ; i++){
+    cards[i].classList.add('visible');
+}
 
 function showSlides(index) {
   cards.forEach((card) => card.classList.add('hidden'));
@@ -146,7 +161,10 @@ function showSlides(index) {
 
 nextBtn.addEventListener('click', () => {
   currentIndex += 3;
-  if (currentIndex >= cards.length) currentIndex = 0;
+  if (currentIndex >= cards.length) {
+
+    currentIndex = 0;
+  }
   showSlides(currentIndex);
 });
 
