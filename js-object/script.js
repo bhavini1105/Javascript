@@ -95,7 +95,45 @@ const names1 = {
 
 array are also an  object(special) the method of array we use to manipulate the array
 
+
 */
+// let bmi , height;
+
+// let mark = {
+//     fullName : "Mark Miller",
+//     mass : 70 ,
+//     height : 1.69 ,
+//     calcBmi : function(){
+//         this.bmi = (this.mass) / (this.height * this.height);
+//         return this.bmi
+//     }
+// }
+
+// let john = {
+//     fullName : "John Smit",
+//     mass : 92 ,
+//     height : 1.95 ,
+//     calcBmi : function(){
+//         this.bmi = (this.mass) / (this.height * this.height);
+//         return this.bmi
+//     }
+// }
+
+// mark.calcBmi();
+// john.calcBmi();
+
+// console.log(mark.bmi,john.bmi);
+
+// if(mark.bmi > john.bmi){
+//     console.log(`${mark.fullName}'s BMI ${mark.bmi} is Heigher Than ${john.fullName}'s Bmi ${john.bmi}`);
+// }
+// else if(mark.bmi < john.bmi){
+//     console.log(`${john.fullName}'s BMI ${john.bmi} is Heigher Than ${mark.fullName}'s Bmi ${mark.bmi}`);
+// }
+// else{
+//     console.log(`${mark.fullName}'s BMI ${mark.bmi} is similar to ${john.fullName}'s Bmi ${john.bmi}`);
+// }
+
 
 // let person = {
 //     name: "John",         
@@ -104,6 +142,8 @@ array are also an  object(special) the method of array we use to manipulate the 
 //       console.log("Hello, my name is " + this.name);
 //     }
 //   };
+
+
 
 let obj1 = {
     name: 'Vini Patel',
@@ -439,8 +479,6 @@ students.forEach((student) => {
         </div>
     </div>`;
 });
-
-
 
 
 //   console.log(person.name);
