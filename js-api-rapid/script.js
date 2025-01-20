@@ -76,8 +76,8 @@ toast.onclick = () => {
 
 
 
-loadMoviesBtn.addEventListener('click', () => {
-    movieTypes();
-});
+// loadMoviesBtn.addEventListener('click', () => {
+//     movieTypes();
+// });
 
 // movieTypes();
